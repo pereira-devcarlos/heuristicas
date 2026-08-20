@@ -1,4 +1,4 @@
-Heurísticas e Metaheurísticas
+# Heurísticas e Metaheurísticas
 
 Repositório pessoal de estudos e práticas da disciplina de Heurísticas e Metaheurísticas, cursada sob orientação do professor Iago A. Carvalho.
 
