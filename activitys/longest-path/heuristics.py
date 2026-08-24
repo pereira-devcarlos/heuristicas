@@ -12,8 +12,40 @@ class Heuristics:
         Constructive heuristic.
         """
         print("Executing construtiva algorithm...")
-        # Add implementation here
-        pass
+        self.best_solution = []
+
+        # Smallest degree
+        smallVertex = None
+        smallDegree = float("inf")
+        for vertex in self.graph.nodes:
+            degree = self.graph.degree[vertex]
+
+            if degree < smallDegree:
+                smallDegree = degree
+                smallVertex = vertex
+
+        current = smallVertex
+        visited = set()
+        visited.add(current)
+
+        while True:
+            # Biggest neighbor
+            bestNeighbor = None
+            highestDegree = float("-inf")
+            for neighbor in self.graph.neighbors(current):
+                if neighbor not in visited:
+                    degree = self.graph.degree[neighbor]
+
+                    if degree > highestDegree:
+                        highestDegree = degree
+                        bestNeighbor = neighbor
+
+            if bestNeighbor is None:
+                break;
+
+            self.best_solution.append((current, bestNeighbor))
+            visited.add(bestNeighbor)
+            current = bestNeighbor
 
     def local(self):
         """
