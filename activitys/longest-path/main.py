@@ -62,12 +62,15 @@ def main():
         match algorithm:
             case "construtiva" | "construtivo" | "guloso" | "gulosa":
                 heuristics.construtiva()
-                # Add algorithm 1 logic here
-            # case "local":
-                # Add algorithm 2 logic here
+            case "local":
+                heuristics.construtiva()
+                heuristics.local()
             case _:
                 print(f"Unknown algorithm: {algorithm}")
 
-        heuristics.evaluate()
+        cost = heuristics.evaluate()
+
+        print("Final cost:", cost)
+        print("Number of edges:", len(heuristics.best_solution))
 if __name__ == '__main__':
     main()
