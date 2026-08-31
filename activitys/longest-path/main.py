@@ -65,6 +65,9 @@ def main():
             case "local":
                 heuristics.construtiva()
                 heuristics.local()
+            case "repair" | "reparar":
+                heuristics.construtiva()
+                heuristics.repair()
             case _:
                 print(f"Unknown algorithm: {algorithm}")
 
