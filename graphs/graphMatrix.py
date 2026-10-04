@@ -22,6 +22,7 @@ def verify_edge(graph, vertex1, vertex2):
     else:
         print("One or both vertices do not exist in the graph")
 
+# Degree of Vertex
 def degree_of_vertex(graph, vertex):
     if vertex in index_map:
         i = index_map[vertex]
@@ -29,6 +30,20 @@ def degree_of_vertex(graph, vertex):
     else:
         return -1  # Vertex does not exist in the graph
 
+def add_edge(graph, vertex1, vertex2):
+    if vertex1 in index_map and vertex2 in index_map:
+        i = index_map[vertex1]
+        j = index_map[vertex2]
+        graph[i][j] = 1
+        graph[j][i] = 1
+    else:
+        print("One or both vertices don't exist in the graph")
+
+def print_graph(graph):
+    for r in graph:
+        for e in r:
+            print(e, end=", ")
+        print()
 
 # Testing the functions
 print("---------------- Edges of the Graph -----------------")
@@ -54,3 +69,11 @@ if degree_E != -1:
     print(f"Degree of vertex E: {degree_E}")
 else:
     print("Vertex E does not exist in the graph")
+
+print(f"\n----------- Adds Edges in the Graph ----------------")
+add_edge(graph, 'A', 'C')
+print("Adds edge in the graph: A is connected to C")
+verify_edge(graph, 'A', 'C')
+
+print(f"\n-------------- Print Graph ----------------")
+print_graph(graph)
