@@ -16,6 +16,7 @@ def verify_edge(graph, vertex1, vertex2):
     else:
         print(f"Edge does not exist between {vertex1} and {vertex2}")
 
+# Degree of Vertex
 def degree_of_vertex(graph, vertex):
     if vertex in graph:
         return len(graph[vertex])
@@ -31,9 +32,3 @@ print(f"Degree of vertex A: {degree_A}")
 
 degree_B = degree_of_vertex(graph, 'B')
 print(f"Degree of vertex B: {degree_B}")
-
-degree_C = degree_of_vertex(graph, 'C')
-print(f"Degree of vertex C: {degree_C}")
-
-degree_D = degree_of_vertex(graph, 'D')
-print(f"Degree of vertex D: {degree_D}")
