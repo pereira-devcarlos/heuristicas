@@ -1,4 +1,4 @@
-/graph
 **/instancias
+**/__pycache__
 /.venv
 /.vscode

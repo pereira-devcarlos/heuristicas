@@ -43,9 +43,9 @@ def main():
     instance_name = sys.argv[1]
     algorithm = sys.argv[2]
 
-    # Construct the path to the 'instancias' directory relative to this script
+    # Instances are shared with the base implementation.
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    instances_dir = os.path.join(base_dir, 'instancias')
+    instances_dir = os.path.join(base_dir, '..', 'codeBase', 'instancias')
     file_path = os.path.join(instances_dir, instance_name)
     
     if not os.path.exists(file_path):
@@ -62,11 +62,14 @@ def main():
         match algorithm:
             case "construtiva" | "construtivo" | "guloso" | "gulosa":
                 heuristics.construtiva()
-            case 'repair' | 'reparar' | 'reparacao':
+            case "local":
+                heuristics.construtiva()
+                heuristics.local()
+            case "repair" | "reparar":
                 heuristics.construtiva()
                 heuristics.repair()
-            case "local":
-                print("Under maintenance...")
+            case 'vnd':
+                heuristics.vnd()
             case _:
                 print(f"Unknown algorithm: {algorithm}")
 
