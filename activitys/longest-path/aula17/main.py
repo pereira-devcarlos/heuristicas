@@ -72,6 +72,8 @@ def main():
                 heuristics.vnd()
             case 'ils':
                 heuristics.ils()
+            case 'ga' | 'genetico':
+                heuristics.genetic_algorithm()
             case _:
                 print(f"Unknown algorithm: {algorithm}")
 
