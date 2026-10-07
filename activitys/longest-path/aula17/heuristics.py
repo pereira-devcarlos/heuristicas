@@ -355,3 +355,117 @@ class Heuristics:
             cost += self.graph[u][v]['weight']
 
         return cost 
+
+    def evaluate_path(self, path):
+            """Helper to evaluate the cost of a sequence of vertices."""
+            cost = 0
+            for u, v in zip(path, path[1:]):
+                cost += self.graph[u][v]['weight']
+            return cost
+
+    def generate_random_path(self):
+        """Generates a random valid path to populate the initial generation."""
+        start_node = random.choice(list(self.graph.nodes))
+        path = [start_node]
+        visited = {start_node}
+        while True:
+            # Encontra vizinhos não visitados
+            neighbors = [n for n in self.graph.neighbors(path[-1]) if n not in visited]
+            if not neighbors:
+                break
+            # Escolhe um vizinho aleatoriamente
+            next_node = random.choice(neighbors)
+            path.append(next_node)
+            visited.add(next_node)
+        return path
+
+    def crossover(self, p1, p2):
+        """
+        1-point crossover based on a common vertex.
+        Combines the first part of p1 with the second part of p2.
+        """
+        common_nodes = set(p1) & set(p2)
+        if not common_nodes:
+            # Se não houver vértices em comum, retorna o melhor dos dois pais
+            return p1.copy() if self.evaluate_path(p1) > self.evaluate_path(p2) else p2.copy()
+        
+        # Escolhe um ponto de cruzamento (vértice comum) aleatório
+        c = random.choice(list(common_nodes))
+        idx1 = p1.index(c)
+        idx2 = p2.index(c)
+        
+        # Funde as duas partes
+        new_path = p1[:idx1] + p2[idx2:]
+        
+        # Valida o novo caminho para garantir que não há ciclos (vértices repetidos)
+        valid_path = []
+        visited = set()
+        for node in new_path:
+            if node in visited:
+                break
+            if valid_path and not self.graph.has_edge(valid_path[-1], node):
+                break
+            valid_path.append(node)
+            visited.add(node)
+            
+        return valid_path
+
+    def genetic_algorithm(self):
+        """
+        Genetic Algorithm (GA) for the Longest Path Problem.
+        """
+        print("Executing Genetic Algorithm...")
+        start_time = time.time()
+        max_time = 30  # Critério de paragem: 30 segundos
+        pop_size = 50  # Tamanho da população
+
+        population = []
+        
+        # 1. Inicialização: Um indivíduo construtivo (guloso) e os restantes aleatórios
+        self.construtiva()
+        greedy_path = self._valid_path_prefix(self.best_solution)
+        population.append(greedy_path)
+        
+        while len(population) < pop_size:
+            population.append(self.generate_random_path())
+            
+        best_global_path = max(population, key=self.evaluate_path)
+        best_global_cost = self.evaluate_path(best_global_path)
+
+        # 2. Ciclo das gerações até o tempo limite se esgotar
+        while (time.time() - start_time) < max_time:
+            new_population = []
+            
+            # Elitismo: mantém os 2 melhores indivíduos intactos para a próxima geração
+            population.sort(key=self.evaluate_path, reverse=True)
+            new_population.extend(population[:2])
+            
+            while len(new_population) < pop_size:
+                # Seleção por Torneio (escolhe 3 aleatórios e fica com o melhor)
+                p1 = max(random.sample(population, 3), key=self.evaluate_path)
+                p2 = max(random.sample(population, 3), key=self.evaluate_path)
+                
+                # Cruzamento (Crossover) - taxa de 80%
+                if random.random() < 0.8:
+                    child = self.crossover(p1, p2)
+                else:
+                    child = p1.copy()
+                
+                # Mutação - taxa de 20% (utilizamos a perturbação desenvolvida antes)
+                if random.random() < 0.2:
+                    child = self.perturbation(child)
+                    
+                new_population.append(child)
+                
+            population = new_population
+            
+            # Atualiza a melhor solução global encontrada
+            current_best = max(population, key=self.evaluate_path)
+            current_cost = self.evaluate_path(current_best)
+            if current_cost > best_global_cost:
+                best_global_cost = current_cost
+                best_global_path = current_best
+                
+        # Converte de volta para lista de arestas no formato esperado pela classe
+        self.best_solution = list(zip(best_global_path, best_global_path[1:]))
+        return self.best_solution
