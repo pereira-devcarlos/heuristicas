@@ -1,0 +1,32 @@
+{
+  "descricao": "Recorte de CPU e memoria publicados; nao e uma instancia completa de otimizacao.",
+  "origem": {
+    "tipo": "transcricao_do_artigo",
+    "doi": "10.1109/ACCESS.2024.3351944",
+    "tabela": 4,
+    "pagina_impressa": 7422,
+    "aplicacao": "EdgeX Foundry",
+    "usuarios": 1,
+    "unidade_cpu": "cores",
+    "unidade_memoria": "Mbytes"
+  },
+  "servicos": [
+    {"id": "edgex-device-rest", "cpu": 0.01, "memoria": 31.98},
+    {"id": "edgex-core-consul", "cpu": 0.01, "memoria": 1.65},
+    {"id": "edgex-core-command", "cpu": 0.04, "memoria": 18.41},
+    {"id": "edgex-support-scheduler", "cpu": 0.01, "memoria": 45.31},
+    {"id": "edgex-redis", "cpu": 0.12, "memoria": 99.41},
+    {"id": "edgex-coredata", "cpu": 0.03, "memoria": 124.55},
+    {"id": "edgex-coremetadata", "cpu": 0.08, "memoria": 28.52},
+    {"id": "edgex-support-notification", "cpu": 0.10, "memoria": 29.61},
+    {"id": "edgex-sys-mgmt", "cpu": 0.01, "memoria": 15.31}
+  ],
+  "campos_ausentes": [
+    "nos_e_capacidades",
+    "distancias_entre_nos",
+    "falhas_por_no",
+    "trafego_entre_servicos",
+    "limites_de_replicas",
+    "regra_de_distribuicao_do_trafego"
+  ]
+}

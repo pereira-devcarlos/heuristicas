@@ -1,0 +1,23 @@
+{
+  "modelo": "moma-operacional-v1",
+  "nome": "dois_servicos_dois_nos",
+  "origem": {
+    "tipo": "sintetica_didatica",
+    "descricao": "Valores escolhidos para permitir contas manuais; nao sao medicoes do artigo.",
+    "unidade_cpu": "cores",
+    "unidade_memoria": "MB",
+    "unidade_volume": "unidades arbitrarias de dados por segundo"
+  },
+  "nos": [
+    {"id": "a", "cluster": "c1", "cpu": 4, "memoria": 8, "falha": 0.01},
+    {"id": "b", "cluster": "c2", "cpu": 2, "memoria": 4, "falha": 0.03}
+  ],
+  "servicos": [
+    {"id": "s0", "cpu": 1, "memoria": 2, "replicas_min": 1, "replicas_max": 2},
+    {"id": "s1", "cpu": 2, "memoria": 4, "replicas_min": 1, "replicas_max": 2}
+  ],
+  "distancias": [[0, 3], [3, 0]],
+  "interacoes": [
+    {"origem": "s0", "destino": "s1", "volume": 10}
+  ]
+}

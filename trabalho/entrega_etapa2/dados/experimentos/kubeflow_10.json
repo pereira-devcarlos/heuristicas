@@ -1,0 +1,384 @@
+{
+  "modelo": "moma-operacional-v1",
+  "nome": "kubeflow_10_usuarios_hibrida",
+  "origem": {
+    "tipo": "hibrida",
+    "aplicacao": "Kubeflow",
+    "usuarios": 10,
+    "recursos": {
+      "arquivo": "../recursos_artigo.json",
+      "doi": "10.1109/ACCESS.2024.3351944",
+      "tabela": 5,
+      "pagina": 7423
+    },
+    "infraestrutura": "sintetica; regra em gerar_instancias.py, dimensionada pela carga de dez usuarios",
+    "rede": "sintetica; nao utiliza a coluna Interaction do artigo",
+    "trafego": "grafo dirigido sintetico com volumes base uniformes [1,10] multiplicados pelo numero de usuarios",
+    "replicas": "limites sinteticos: uma a duas por servico; custo fixo por replica",
+    "semente_geracao": 103,
+    "unidade_cpu": "cores",
+    "unidade_memoria": "Mbytes",
+    "unidade_volume": "unidades arbitrarias de dados por segundo"
+  },
+  "nos": [
+    {
+      "id": "n0",
+      "cluster": "c0",
+      "cpu": 4.8825,
+      "memoria": 8416.3485,
+      "falha": 0.029581
+    },
+    {
+      "id": "n1",
+      "cluster": "c0",
+      "cpu": 1.1625,
+      "memoria": 2003.8925,
+      "falha": 0.019126
+    },
+    {
+      "id": "n2",
+      "cluster": "c1",
+      "cpu": 4.6095,
+      "memoria": 4809.342,
+      "falha": 0.024377
+    },
+    {
+      "id": "n3",
+      "cluster": "c1",
+      "cpu": 0.93,
+      "memoria": 1603.114,
+      "falha": 0.024698
+    },
+    {
+      "id": "n4",
+      "cluster": "c2",
+      "cpu": 4.6095,
+      "memoria": 5610.899,
+      "falha": 0.014298
+    },
+    {
+      "id": "n5",
+      "cluster": "c2",
+      "cpu": 1.6275,
+      "memoria": 2805.4495,
+      "falha": 0.011561
+    }
+  ],
+  "distancias": [
+    [
+      0.0,
+      1.301372,
+      2.682879,
+      3.07334,
+      3.834554,
+      3.808225
+    ],
+    [
+      1.301372,
+      0.0,
+      2.678034,
+      2.623351,
+      2.833729,
+      3.742137
+    ],
+    [
+      2.682879,
+      2.678034,
+      0.0,
+      1.012362,
+      2.837774,
+      2.660855
+    ],
+    [
+      3.07334,
+      2.623351,
+      1.012362,
+      0.0,
+      2.691457,
+      3.285137
+    ],
+    [
+      3.834554,
+      2.833729,
+      2.837774,
+      2.691457,
+      0.0,
+      1.091716
+    ],
+    [
+      3.808225,
+      3.742137,
+      2.660855,
+      3.285137,
+      1.091716,
+      0.0
+    ]
+  ],
+  "servicos": [
+    {
+      "id": "application-controller",
+      "cpu": 0.03,
+      "memoria": 232.64,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "metadata",
+      "cpu": 0.03,
+      "memoria": 199.31,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "metadata-writer",
+      "cpu": 0.01,
+      "memoria": 653.21,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "metadata-envoy-deployment",
+      "cpu": 0.05,
+      "memoria": 314.6,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "cache-server",
+      "cpu": 0.01,
+      "memoria": 311.24,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "ml-pipeline-viewer",
+      "cpu": 0.01,
+      "memoria": 224.42,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "ml-pipeline-scheduledworkflow",
+      "cpu": 0.01,
+      "memoria": 316.52,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "mysql",
+      "cpu": 0.02,
+      "memoria": 1524.01,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "minio",
+      "cpu": 0.02,
+      "memoria": 352.24,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "ml-pipeline-ui",
+      "cpu": 0.01,
+      "memoria": 592.58,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "ml-pipeline-visualizationserver",
+      "cpu": 0.01,
+      "memoria": 843.52,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "workflow-controller",
+      "cpu": 0.03,
+      "memoria": 421.14,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "tran-pipeline",
+      "cpu": 4.39,
+      "memoria": 1678.91,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "ml-pipeline-persistenceagent",
+      "cpu": 0.02,
+      "memoria": 351.23,
+      "replicas_min": 1,
+      "replicas_max": 2
+    }
+  ],
+  "interacoes": [
+    {
+      "origem": "application-controller",
+      "destino": "metadata",
+      "volume": 75.98672
+    },
+    {
+      "origem": "metadata",
+      "destino": "application-controller",
+      "volume": 29.4208
+    },
+    {
+      "origem": "metadata",
+      "destino": "metadata-writer",
+      "volume": 89.79268
+    },
+    {
+      "origem": "metadata",
+      "destino": "workflow-controller",
+      "volume": 92.74997
+    },
+    {
+      "origem": "metadata",
+      "destino": "tran-pipeline",
+      "volume": 83.16381
+    },
+    {
+      "origem": "metadata-writer",
+      "destino": "application-controller",
+      "volume": 53.66374
+    },
+    {
+      "origem": "metadata-writer",
+      "destino": "metadata-envoy-deployment",
+      "volume": 60.69705
+    },
+    {
+      "origem": "metadata-writer",
+      "destino": "ml-pipeline-persistenceagent",
+      "volume": 50.03975
+    },
+    {
+      "origem": "metadata-envoy-deployment",
+      "destino": "application-controller",
+      "volume": 68.21519
+    },
+    {
+      "origem": "metadata-envoy-deployment",
+      "destino": "cache-server",
+      "volume": 66.02414
+    },
+    {
+      "origem": "metadata-envoy-deployment",
+      "destino": "ml-pipeline-viewer",
+      "volume": 44.76312
+    },
+    {
+      "origem": "cache-server",
+      "destino": "ml-pipeline-viewer",
+      "volume": 92.76069
+    },
+    {
+      "origem": "cache-server",
+      "destino": "ml-pipeline-ui",
+      "volume": 65.30417
+    },
+    {
+      "origem": "ml-pipeline-viewer",
+      "destino": "metadata-writer",
+      "volume": 12.53203
+    },
+    {
+      "origem": "ml-pipeline-viewer",
+      "destino": "cache-server",
+      "volume": 24.65749
+    },
+    {
+      "origem": "ml-pipeline-viewer",
+      "destino": "ml-pipeline-scheduledworkflow",
+      "volume": 36.0168
+    },
+    {
+      "origem": "ml-pipeline-scheduledworkflow",
+      "destino": "mysql",
+      "volume": 90.55266
+    },
+    {
+      "origem": "ml-pipeline-scheduledworkflow",
+      "destino": "tran-pipeline",
+      "volume": 53.89256
+    },
+    {
+      "origem": "ml-pipeline-scheduledworkflow",
+      "destino": "ml-pipeline-persistenceagent",
+      "volume": 40.01717
+    },
+    {
+      "origem": "mysql",
+      "destino": "ml-pipeline-viewer",
+      "volume": 99.91412
+    },
+    {
+      "origem": "mysql",
+      "destino": "minio",
+      "volume": 20.11527
+    },
+    {
+      "origem": "mysql",
+      "destino": "ml-pipeline-ui",
+      "volume": 94.07165
+    },
+    {
+      "origem": "minio",
+      "destino": "mysql",
+      "volume": 52.90696
+    },
+    {
+      "origem": "minio",
+      "destino": "ml-pipeline-ui",
+      "volume": 69.99799
+    },
+    {
+      "origem": "ml-pipeline-ui",
+      "destino": "ml-pipeline-visualizationserver",
+      "volume": 35.11921
+    },
+    {
+      "origem": "ml-pipeline-ui",
+      "destino": "workflow-controller",
+      "volume": 81.19447
+    },
+    {
+      "origem": "ml-pipeline-visualizationserver",
+      "destino": "workflow-controller",
+      "volume": 49.57716
+    },
+    {
+      "origem": "workflow-controller",
+      "destino": "metadata",
+      "volume": 45.96357
+    },
+    {
+      "origem": "workflow-controller",
+      "destino": "tran-pipeline",
+      "volume": 12.88416
+    },
+    {
+      "origem": "tran-pipeline",
+      "destino": "ml-pipeline-persistenceagent",
+      "volume": 90.48235
+    },
+    {
+      "origem": "ml-pipeline-persistenceagent",
+      "destino": "application-controller",
+      "volume": 13.90496
+    },
+    {
+      "origem": "ml-pipeline-persistenceagent",
+      "destino": "metadata",
+      "volume": 51.449
+    },
+    {
+      "origem": "ml-pipeline-persistenceagent",
+      "destino": "cache-server",
+      "volume": 33.55217
+    }
+  ]
+}

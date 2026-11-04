@@ -1,0 +1,268 @@
+{
+  "grupos": [
+    {
+      "instancia": "edgex_10_usuarios_hibrida",
+      "metodo": "moma",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.48097438229678946,
+      "hv_desvio_amostral": 0.053074449996836054,
+      "hv_mediana": 0.49563164473726906,
+      "tempo_medio_segundos": 2.139579407799465,
+      "pontos_medios": 5.8
+    },
+    {
+      "instancia": "edgex_10_usuarios_hibrida",
+      "metodo": "aleatorio",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.38537240756911006,
+      "hv_desvio_amostral": 0.03330854479066153,
+      "hv_mediana": 0.37776756688751495,
+      "tempo_medio_segundos": 1.743392094198498,
+      "pontos_medios": 4.6
+    },
+    {
+      "instancia": "edgex_10_usuarios_hibrida",
+      "metodo": "guloso_recursos",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.5522660507725706,
+      "hv_desvio_amostral": 0.03291476208914013,
+      "hv_mediana": 0.5475767677643117,
+      "tempo_medio_segundos": 1.1328870238983655,
+      "pontos_medios": 6.5
+    },
+    {
+      "instancia": "edgex_10_usuarios_hibrida",
+      "metodo": "guloso_comunicacao",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.5834800145524787,
+      "hv_desvio_amostral": 0.028650439101083496,
+      "hv_mediana": 0.5797583395557229,
+      "tempo_medio_segundos": 1.079031349804427,
+      "pontos_medios": 8.1
+    },
+    {
+      "instancia": "edgex_1_usuarios_hibrida",
+      "metodo": "moma",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.9036560547187649,
+      "hv_desvio_amostral": 0.03862530022014364,
+      "hv_mediana": 0.9046788092534823,
+      "tempo_medio_segundos": 1.9630469315990922,
+      "pontos_medios": 7.7
+    },
+    {
+      "instancia": "edgex_1_usuarios_hibrida",
+      "metodo": "aleatorio",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.778961335809089,
+      "hv_desvio_amostral": 0.04751638030192913,
+      "hv_mediana": 0.7623203230989274,
+      "tempo_medio_segundos": 1.517287615002715,
+      "pontos_medios": 7.3
+    },
+    {
+      "instancia": "edgex_1_usuarios_hibrida",
+      "metodo": "guloso_recursos",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.7950244220027549,
+      "hv_desvio_amostral": 0.06468129568362498,
+      "hv_mediana": 0.8140434431064698,
+      "tempo_medio_segundos": 0.9766177199984668,
+      "pontos_medios": 8
+    },
+    {
+      "instancia": "edgex_1_usuarios_hibrida",
+      "metodo": "guloso_comunicacao",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 1.042074692192601,
+      "hv_desvio_amostral": 0.009795353032790851,
+      "hv_mediana": 1.045085590289438,
+      "tempo_medio_segundos": 0.9729607347006095,
+      "pontos_medios": 10
+    },
+    {
+      "instancia": "kubeflow_10_usuarios_hibrida",
+      "metodo": "moma",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.3438004653341829,
+      "hv_desvio_amostral": 0.059698113599467646,
+      "hv_mediana": 0.3395108059946943,
+      "tempo_medio_segundos": 2.470544247298676,
+      "pontos_medios": 5
+    },
+    {
+      "instancia": "kubeflow_10_usuarios_hibrida",
+      "metodo": "aleatorio",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.2806493050621816,
+      "hv_desvio_amostral": 0.021419668969120273,
+      "hv_mediana": 0.2876717062851528,
+      "tempo_medio_segundos": 1.9331692785999621,
+      "pontos_medios": 5.3
+    },
+    {
+      "instancia": "kubeflow_10_usuarios_hibrida",
+      "metodo": "guloso_recursos",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.36844781889742245,
+      "hv_desvio_amostral": 0.024277039258670374,
+      "hv_mediana": 0.3731588484990598,
+      "tempo_medio_segundos": 1.2564148676028708,
+      "pontos_medios": 4.9
+    },
+    {
+      "instancia": "kubeflow_10_usuarios_hibrida",
+      "metodo": "guloso_comunicacao",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.34287528396252287,
+      "hv_desvio_amostral": 0.01569957696912695,
+      "hv_mediana": 0.34130039993305755,
+      "tempo_medio_segundos": 1.1896452699031215,
+      "pontos_medios": 8.8
+    },
+    {
+      "instancia": "kubeflow_1_usuarios_hibrida",
+      "metodo": "moma",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.5297813507656203,
+      "hv_desvio_amostral": 0.03756989573295905,
+      "hv_mediana": 0.5140106035235505,
+      "tempo_medio_segundos": 2.2067118961000234,
+      "pontos_medios": 5.9
+    },
+    {
+      "instancia": "kubeflow_1_usuarios_hibrida",
+      "metodo": "aleatorio",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.462768672004033,
+      "hv_desvio_amostral": 0.022526734247602726,
+      "hv_mediana": 0.46264785683807347,
+      "tempo_medio_segundos": 1.860557563600014,
+      "pontos_medios": 5.9
+    },
+    {
+      "instancia": "kubeflow_1_usuarios_hibrida",
+      "metodo": "guloso_recursos",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.6140712152577887,
+      "hv_desvio_amostral": 0.02937826664230101,
+      "hv_mediana": 0.6195879212057804,
+      "tempo_medio_segundos": 1.121504406897293,
+      "pontos_medios": 4.9
+    },
+    {
+      "instancia": "kubeflow_1_usuarios_hibrida",
+      "metodo": "guloso_comunicacao",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.699038290275456,
+      "hv_desvio_amostral": 0.014646971516568257,
+      "hv_mediana": 0.696182594985216,
+      "tempo_medio_segundos": 1.0568366677965968,
+      "pontos_medios": 9.5
+    },
+    {
+      "instancia": "sockshop_10_usuarios_hibrida",
+      "metodo": "moma",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.4312425519388179,
+      "hv_desvio_amostral": 0.0571859932336533,
+      "hv_mediana": 0.4173617149520097,
+      "tempo_medio_segundos": 2.3838134985009676,
+      "pontos_medios": 4.7
+    },
+    {
+      "instancia": "sockshop_10_usuarios_hibrida",
+      "metodo": "aleatorio",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.2887661507010209,
+      "hv_desvio_amostral": 0.025508951927218804,
+      "hv_mediana": 0.2840006549184524,
+      "tempo_medio_segundos": 1.9642807473006543,
+      "pontos_medios": 3.9
+    },
+    {
+      "instancia": "sockshop_10_usuarios_hibrida",
+      "metodo": "guloso_recursos",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.47667796384135713,
+      "hv_desvio_amostral": 0.018568836666867542,
+      "hv_mediana": 0.4729557851366333,
+      "tempo_medio_segundos": 1.1993411383009516,
+      "pontos_medios": 4.9
+    },
+    {
+      "instancia": "sockshop_10_usuarios_hibrida",
+      "metodo": "guloso_comunicacao",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.5066854408074988,
+      "hv_desvio_amostral": 0.04655132286936288,
+      "hv_mediana": 0.50343930204602,
+      "tempo_medio_segundos": 1.1746459866990335,
+      "pontos_medios": 10.5
+    },
+    {
+      "instancia": "sockshop_1_usuarios_hibrida",
+      "metodo": "moma",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.6838243815296826,
+      "hv_desvio_amostral": 0.05074359493888231,
+      "hv_mediana": 0.6827159711222752,
+      "tempo_medio_segundos": 2.5966898408019916,
+      "pontos_medios": 7.4
+    },
+    {
+      "instancia": "sockshop_1_usuarios_hibrida",
+      "metodo": "aleatorio",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.5523191191162785,
+      "hv_desvio_amostral": 0.021312802551537974,
+      "hv_mediana": 0.5453441273085463,
+      "tempo_medio_segundos": 2.234849056894018,
+      "pontos_medios": 9.1
+    },
+    {
+      "instancia": "sockshop_1_usuarios_hibrida",
+      "metodo": "guloso_recursos",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.6298720273356893,
+      "hv_desvio_amostral": 0.026167647955914076,
+      "hv_mediana": 0.62461942305432,
+      "tempo_medio_segundos": 1.3185503806991619,
+      "pontos_medios": 5.4
+    },
+    {
+      "instancia": "sockshop_1_usuarios_hibrida",
+      "metodo": "guloso_comunicacao",
+      "execucoes": 10,
+      "com_solucao_viavel": 10,
+      "hv_media": 0.9186732297199093,
+      "hv_desvio_amostral": 0.010426200441411123,
+      "hv_mediana": 0.9178223189987138,
+      "tempo_medio_segundos": 1.285001328200451,
+      "pontos_medios": 7.7
+    }
+  ]
+}

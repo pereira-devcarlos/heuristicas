@@ -1,0 +1,49 @@
+{
+  "python": "3.14.8",
+  "sistema": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "processador": "",
+  "modelo": "moma-operacional-v1",
+  "parametros_moma": {
+    "populacao": 40,
+    "descendentes": 40,
+    "geracoes": 40,
+    "prob_cruzamento": 0.5,
+    "prob_mutacao": 0.3,
+    "eta": 10.0,
+    "semente": 0
+  },
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "metodos": [
+    "moma",
+    "aleatorio",
+    "guloso_recursos",
+    "guloso_comunicacao"
+  ],
+  "orcamento_por_execucao": 1640,
+  "sha256": {
+    "modelo.py": "13b823e451781f36472bbf32df673b83aff8e1a0c99f0fa3a45256ef6148089e",
+    "moma.py": "aef658715c04a29bf1175b09565151d58248bed494a76d00075497d3e035bb46",
+    "comparadores.py": "a17b0c8b38c3a2a87468bef8510b499e0f5763d58572624d9b32a3f9cfcb68fa",
+    "metricas.py": "51a1521d824d3dd22eaf72d01660320a4d7a24a1348adaf2b29676d45285dff5",
+    "gerar_instancias.py": "41b5ec4bf714003d948f3e35b91150e35f5ce3c903daf5f391a3be373f7c6675",
+    "experimentos.py": "c981948b2a4922e744dda5c67ba2a4fd04deefa86e7f93171aecb1d31938edc9",
+    "dados/recursos_artigo.json": "ff5e2d1fefd8b051dedcf79c92a02b69f48e9936c82d57b52878810f9c1cce2a",
+    "dados/experimentos/edgex_1.json": "7026d11c75f19da3eb7a034a244e547d5e8d98a80dc988da563be1430c076b17",
+    "dados/experimentos/edgex_10.json": "d1f40f4f381259209b142f2225b1ea47bf527e709567f65e669495bc63cb7ff0",
+    "dados/experimentos/kubeflow_1.json": "0dc8204f1ff2e914e546b33db8ce5c9a584d949b2bf3da556298a9d5d9e08ddd",
+    "dados/experimentos/kubeflow_10.json": "c040d21b2b24188963c1aa16b9458601f24c7bed6eb35f9a1d54a588f104944c",
+    "dados/experimentos/sockshop_1.json": "9101404d1eca1897bfa7da6e73a827566248a2a17544e3470d32e1e3fe6bb72e",
+    "dados/experimentos/sockshop_10.json": "b1741d1a02ebae03863e61e5008223cb683e6ebad6ee5216ae92898265f4d6b0"
+  }
+}

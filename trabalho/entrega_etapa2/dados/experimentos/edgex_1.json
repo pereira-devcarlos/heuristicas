@@ -1,0 +1,304 @@
+{
+  "modelo": "moma-operacional-v1",
+  "nome": "edgex_1_usuarios_hibrida",
+  "origem": {
+    "tipo": "hibrida",
+    "aplicacao": "EdgeX Foundry",
+    "usuarios": 1,
+    "recursos": {
+      "arquivo": "../recursos_artigo.json",
+      "doi": "10.1109/ACCESS.2024.3351944",
+      "tabela": 4,
+      "pagina": 7422
+    },
+    "infraestrutura": "sintetica; regra em gerar_instancias.py, dimensionada pela carga de dez usuarios",
+    "rede": "sintetica; nao utiliza a coluna Interaction do artigo",
+    "trafego": "grafo dirigido sintetico com volumes base uniformes [1,10] multiplicados pelo numero de usuarios",
+    "replicas": "limites sinteticos: uma a duas por servico; custo fixo por replica",
+    "semente_geracao": 101,
+    "unidade_cpu": "cores",
+    "unidade_memoria": "Mbytes",
+    "unidade_volume": "unidades arbitrarias de dados por segundo"
+  },
+  "nos": [
+    {
+      "id": "n0",
+      "cluster": "c0",
+      "cpu": 2.1,
+      "memoria": 1386.966,
+      "falha": 0.021623
+    },
+    {
+      "id": "n1",
+      "cluster": "c0",
+      "cpu": 0.5,
+      "memoria": 330.23,
+      "falha": 0.013895
+    },
+    {
+      "id": "n2",
+      "cluster": "c1",
+      "cpu": 1.2,
+      "memoria": 792.552,
+      "falha": 0.029305
+    },
+    {
+      "id": "n3",
+      "cluster": "c1",
+      "cpu": 0.4,
+      "memoria": 264.184,
+      "falha": 0.02848
+    },
+    {
+      "id": "n4",
+      "cluster": "c2",
+      "cpu": 1.4,
+      "memoria": 924.644,
+      "falha": 0.019343
+    },
+    {
+      "id": "n5",
+      "cluster": "c2",
+      "cpu": 0.7,
+      "memoria": 462.322,
+      "falha": 0.023269
+    }
+  ],
+  "distancias": [
+    [
+      0.0,
+      1.107261,
+      2.832544,
+      2.932784,
+      3.538634,
+      2.818565
+    ],
+    [
+      1.107261,
+      0.0,
+      3.956659,
+      2.605533,
+      2.78993,
+      2.633295
+    ],
+    [
+      2.832544,
+      3.956659,
+      0.0,
+      1.384946,
+      3.049772,
+      3.207523
+    ],
+    [
+      2.932784,
+      2.605533,
+      1.384946,
+      0.0,
+      2.989042,
+      3.45614
+    ],
+    [
+      3.538634,
+      2.78993,
+      3.049772,
+      2.989042,
+      0.0,
+      1.201947
+    ],
+    [
+      2.818565,
+      2.633295,
+      3.207523,
+      3.45614,
+      1.201947,
+      0.0
+    ]
+  ],
+  "servicos": [
+    {
+      "id": "edgex-device-rest",
+      "cpu": 0.01,
+      "memoria": 31.98,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-core-consul",
+      "cpu": 0.01,
+      "memoria": 1.65,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-core-command",
+      "cpu": 0.04,
+      "memoria": 18.41,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-support-scheduler",
+      "cpu": 0.01,
+      "memoria": 45.31,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-redis",
+      "cpu": 0.12,
+      "memoria": 99.41,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-coredata",
+      "cpu": 0.03,
+      "memoria": 124.55,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-coremetadata",
+      "cpu": 0.08,
+      "memoria": 28.52,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-support-notification",
+      "cpu": 0.1,
+      "memoria": 29.61,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "edgex-sys-mgmt",
+      "cpu": 0.01,
+      "memoria": 15.31,
+      "replicas_min": 1,
+      "replicas_max": 2
+    }
+  ],
+  "interacoes": [
+    {
+      "origem": "edgex-device-rest",
+      "destino": "edgex-core-consul",
+      "volume": 4.871386
+    },
+    {
+      "origem": "edgex-device-rest",
+      "destino": "edgex-core-command",
+      "volume": 1.997192
+    },
+    {
+      "origem": "edgex-core-consul",
+      "destino": "edgex-device-rest",
+      "volume": 4.64099
+    },
+    {
+      "origem": "edgex-core-consul",
+      "destino": "edgex-core-command",
+      "volume": 1.058667
+    },
+    {
+      "origem": "edgex-core-consul",
+      "destino": "edgex-coremetadata",
+      "volume": 7.341359
+    },
+    {
+      "origem": "edgex-core-consul",
+      "destino": "edgex-support-notification",
+      "volume": 6.079694
+    },
+    {
+      "origem": "edgex-core-command",
+      "destino": "edgex-device-rest",
+      "volume": 2.627578
+    },
+    {
+      "origem": "edgex-core-command",
+      "destino": "edgex-core-consul",
+      "volume": 2.356829
+    },
+    {
+      "origem": "edgex-core-command",
+      "destino": "edgex-support-scheduler",
+      "volume": 7.554487
+    },
+    {
+      "origem": "edgex-support-scheduler",
+      "destino": "edgex-redis",
+      "volume": 1.05353
+    },
+    {
+      "origem": "edgex-support-scheduler",
+      "destino": "edgex-coredata",
+      "volume": 1.287936
+    },
+    {
+      "origem": "edgex-redis",
+      "destino": "edgex-coredata",
+      "volume": 8.130108
+    },
+    {
+      "origem": "edgex-coredata",
+      "destino": "edgex-redis",
+      "volume": 9.614111
+    },
+    {
+      "origem": "edgex-coredata",
+      "destino": "edgex-coremetadata",
+      "volume": 4.038009
+    },
+    {
+      "origem": "edgex-coredata",
+      "destino": "edgex-support-notification",
+      "volume": 5.936831
+    },
+    {
+      "origem": "edgex-coremetadata",
+      "destino": "edgex-core-consul",
+      "volume": 3.508035
+    },
+    {
+      "origem": "edgex-coremetadata",
+      "destino": "edgex-support-scheduler",
+      "volume": 9.435335
+    },
+    {
+      "origem": "edgex-coremetadata",
+      "destino": "edgex-support-notification",
+      "volume": 9.829282
+    },
+    {
+      "origem": "edgex-support-notification",
+      "destino": "edgex-core-consul",
+      "volume": 6.879787
+    },
+    {
+      "origem": "edgex-support-notification",
+      "destino": "edgex-support-scheduler",
+      "volume": 6.697412
+    },
+    {
+      "origem": "edgex-support-notification",
+      "destino": "edgex-coremetadata",
+      "volume": 8.238418
+    },
+    {
+      "origem": "edgex-support-notification",
+      "destino": "edgex-sys-mgmt",
+      "volume": 3.459217
+    },
+    {
+      "origem": "edgex-sys-mgmt",
+      "destino": "edgex-device-rest",
+      "volume": 5.971034
+    },
+    {
+      "origem": "edgex-sys-mgmt",
+      "destino": "edgex-support-notification",
+      "volume": 1.488989
+    }
+  ]
+}

@@ -1,0 +1,1949 @@
+{
+  "instancia": "kubeflow_1_usuarios_hibrida",
+  "metodo": "moma_nsga2_adaptado",
+  "modelo": "moma-operacional-v1",
+  "parametros": {
+    "populacao": 40,
+    "descendentes": 40,
+    "geracoes": 40,
+    "prob_cruzamento": 0.5,
+    "prob_mutacao": 0.3,
+    "eta": 10.0,
+    "semente": 4
+  },
+  "avaliacoes": 1640,
+  "tempo_segundos": 2.013535033009248,
+  "individuos_finais": 40,
+  "individuos_viaveis_finais": 40,
+  "menor_violacao_final": 0.0,
+  "pontos_nao_dominados": [
+    [
+      0.36270506048659223,
+      423.1572680054165
+    ],
+    [
+      0.3637869432212942,
+      418.99220961962357
+    ],
+    [
+      0.3723829385341708,
+      406.11775104195067
+    ],
+    [
+      0.4133545261364529,
+      399.2951678720475
+    ],
+    [
+      0.4173064705935254,
+      397.78763427036495
+    ],
+    [
+      0.422432972607347,
+      332.22237221115483
+    ],
+    [
+      0.47201855641961804,
+      320.0596141774557
+    ],
+    [
+      0.5209092416453956,
+      291.77267324131066
+    ],
+    [
+      0.5541773067097306,
+      230.3782727366237
+    ],
+    [
+      0.5856465556428492,
+      226.2167708776899
+    ]
+  ],
+  "fronteira": [
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.36270506048659223,
+        423.1572680054165
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.13527798898113264
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.3637869432212942,
+        418.99220961962357
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.1366209545264445
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.3637869432212942,
+        418.99220961962357
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.1337469205718477
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.3723829385341708,
+        406.11775104195067
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.14763910569140348
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.4133545261364529,
+        399.2951678720475
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.14197489403738933
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.4173064705935254,
+        397.78763427036495
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.13690215176021475
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "objetivos": [
+        0.422432972607347,
+        332.22237221115483
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.16696122760113538
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "objetivos": [
+        0.47201855641961804,
+        320.0596141774557
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.1500261553766316
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "objetivos": [
+        0.5209092416453956,
+        291.77267324131066
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.16227030155254163
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.5541773067097306,
+        230.3782727366237
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.14261706980043906
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.5541773067097306,
+        230.3782727366237
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.1408726413980737
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.5541773067097306,
+        230.3782727366237
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.14366685920928354
+    },
+    {
+      "alocacao": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.5856465556428492,
+        226.2167708776899
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.14863209796008695
+    }
+  ],
+  "historico": [
+    {
+      "geracao": 0,
+      "avaliacoes": 40,
+      "individuos_viaveis": 9,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 1,
+      "avaliacoes": 80,
+      "individuos_viaveis": 25,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 2,
+      "avaliacoes": 120,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 3
+    },
+    {
+      "geracao": 3,
+      "avaliacoes": 160,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 4,
+      "avaliacoes": 200,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 5,
+      "avaliacoes": 240,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 6,
+      "avaliacoes": 280,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 3
+    },
+    {
+      "geracao": 7,
+      "avaliacoes": 320,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 8,
+      "avaliacoes": 360,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 9,
+      "avaliacoes": 400,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 5
+    },
+    {
+      "geracao": 10,
+      "avaliacoes": 440,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 11,
+      "avaliacoes": 480,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 12,
+      "avaliacoes": 520,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 13,
+      "avaliacoes": 560,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 14,
+      "avaliacoes": 600,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 15,
+      "avaliacoes": 640,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 7
+    },
+    {
+      "geracao": 16,
+      "avaliacoes": 680,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 7
+    },
+    {
+      "geracao": 17,
+      "avaliacoes": 720,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 7
+    },
+    {
+      "geracao": 18,
+      "avaliacoes": 760,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 7
+    },
+    {
+      "geracao": 19,
+      "avaliacoes": 800,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 8
+    },
+    {
+      "geracao": 20,
+      "avaliacoes": 840,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 6
+    },
+    {
+      "geracao": 21,
+      "avaliacoes": 880,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 8
+    },
+    {
+      "geracao": 22,
+      "avaliacoes": 920,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 9
+    },
+    {
+      "geracao": 23,
+      "avaliacoes": 960,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 8
+    },
+    {
+      "geracao": 24,
+      "avaliacoes": 1000,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 9
+    },
+    {
+      "geracao": 25,
+      "avaliacoes": 1040,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 9
+    },
+    {
+      "geracao": 26,
+      "avaliacoes": 1080,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 9
+    },
+    {
+      "geracao": 27,
+      "avaliacoes": 1120,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 9
+    },
+    {
+      "geracao": 28,
+      "avaliacoes": 1160,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 29,
+      "avaliacoes": 1200,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 30,
+      "avaliacoes": 1240,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 31,
+      "avaliacoes": 1280,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 32,
+      "avaliacoes": 1320,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 33,
+      "avaliacoes": 1360,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 11
+    },
+    {
+      "geracao": 34,
+      "avaliacoes": 1400,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 35,
+      "avaliacoes": 1440,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 36,
+      "avaliacoes": 1480,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 37,
+      "avaliacoes": 1520,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 38,
+      "avaliacoes": 1560,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 39,
+      "avaliacoes": 1600,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    },
+    {
+      "geracao": 40,
+      "avaliacoes": 1640,
+      "individuos_viaveis": 40,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 10
+    }
+  ],
+  "metricas": {
+    "escala_comunicacao": 742.7672162345418,
+    "referencia_normalizada": [
+      1.1,
+      1.1
+    ],
+    "hipervolume": 0.5555617652057331,
+    "pontos": 10,
+    "menor_balanceamento": 0.36270506048659223,
+    "menor_comunicacao": 226.2167708776899
+  }
+}

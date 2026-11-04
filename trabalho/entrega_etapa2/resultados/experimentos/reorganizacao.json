@@ -1,0 +1,83 @@
+{
+  "descricao": "O manifesto original foi preservado. As alterações no código são de caminhos, nomes de módulos e organização da saída; os dados e resultados publicados foram preservados.",
+  "arquivos": [
+    {
+      "caminho_original": "modelo.py",
+      "caminho_entrega": "codigo/modelo.py",
+      "sha256_original": "13b823e451781f36472bbf32df673b83aff8e1a0c99f0fa3a45256ef6148089e",
+      "sha256_entrega": "13b823e451781f36472bbf32df673b83aff8e1a0c99f0fa3a45256ef6148089e"
+    },
+    {
+      "caminho_original": "moma.py",
+      "caminho_entrega": "codigo/moma.py",
+      "sha256_original": "aef658715c04a29bf1175b09565151d58248bed494a76d00075497d3e035bb46",
+      "sha256_entrega": "aef658715c04a29bf1175b09565151d58248bed494a76d00075497d3e035bb46"
+    },
+    {
+      "caminho_original": "comparadores.py",
+      "caminho_entrega": "codigo/comparadores.py",
+      "sha256_original": "a17b0c8b38c3a2a87468bef8510b499e0f5763d58572624d9b32a3f9cfcb68fa",
+      "sha256_entrega": "a17b0c8b38c3a2a87468bef8510b499e0f5763d58572624d9b32a3f9cfcb68fa"
+    },
+    {
+      "caminho_original": "metricas.py",
+      "caminho_entrega": "codigo/metricas.py",
+      "sha256_original": "51a1521d824d3dd22eaf72d01660320a4d7a24a1348adaf2b29676d45285dff5",
+      "sha256_entrega": "51a1521d824d3dd22eaf72d01660320a4d7a24a1348adaf2b29676d45285dff5"
+    },
+    {
+      "caminho_original": "gerar_instancias.py",
+      "caminho_entrega": "codigo/gerar_instancias.py",
+      "sha256_original": "41b5ec4bf714003d948f3e35b91150e35f5ce3c903daf5f391a3be373f7c6675",
+      "sha256_entrega": "f61dd41e2a7dd4a5b63f43c8faca72e702dc32f6cac461d744e1a0e50659f27d"
+    },
+    {
+      "caminho_original": "experimentos.py",
+      "caminho_entrega": "codigo/experimentos.py",
+      "sha256_original": "c981948b2a4922e744dda5c67ba2a4fd04deefa86e7f93171aecb1d31938edc9",
+      "sha256_entrega": "b2cf5f2b9d53f831d348bb6f88d9c09681e4af70ee0232f9700a5fa13193f2b2"
+    },
+    {
+      "caminho_original": "dados/recursos_artigo.json",
+      "caminho_entrega": "dados/recursos_artigo.json",
+      "sha256_original": "ff5e2d1fefd8b051dedcf79c92a02b69f48e9936c82d57b52878810f9c1cce2a",
+      "sha256_entrega": "ff5e2d1fefd8b051dedcf79c92a02b69f48e9936c82d57b52878810f9c1cce2a"
+    },
+    {
+      "caminho_original": "dados/experimentos/edgex_1.json",
+      "caminho_entrega": "dados/experimentos/edgex_1.json",
+      "sha256_original": "7026d11c75f19da3eb7a034a244e547d5e8d98a80dc988da563be1430c076b17",
+      "sha256_entrega": "7026d11c75f19da3eb7a034a244e547d5e8d98a80dc988da563be1430c076b17"
+    },
+    {
+      "caminho_original": "dados/experimentos/edgex_10.json",
+      "caminho_entrega": "dados/experimentos/edgex_10.json",
+      "sha256_original": "d1f40f4f381259209b142f2225b1ea47bf527e709567f65e669495bc63cb7ff0",
+      "sha256_entrega": "d1f40f4f381259209b142f2225b1ea47bf527e709567f65e669495bc63cb7ff0"
+    },
+    {
+      "caminho_original": "dados/experimentos/kubeflow_1.json",
+      "caminho_entrega": "dados/experimentos/kubeflow_1.json",
+      "sha256_original": "0dc8204f1ff2e914e546b33db8ce5c9a584d949b2bf3da556298a9d5d9e08ddd",
+      "sha256_entrega": "0dc8204f1ff2e914e546b33db8ce5c9a584d949b2bf3da556298a9d5d9e08ddd"
+    },
+    {
+      "caminho_original": "dados/experimentos/kubeflow_10.json",
+      "caminho_entrega": "dados/experimentos/kubeflow_10.json",
+      "sha256_original": "c040d21b2b24188963c1aa16b9458601f24c7bed6eb35f9a1d54a588f104944c",
+      "sha256_entrega": "c040d21b2b24188963c1aa16b9458601f24c7bed6eb35f9a1d54a588f104944c"
+    },
+    {
+      "caminho_original": "dados/experimentos/sockshop_1.json",
+      "caminho_entrega": "dados/experimentos/sockshop_1.json",
+      "sha256_original": "9101404d1eca1897bfa7da6e73a827566248a2a17544e3470d32e1e3fe6bb72e",
+      "sha256_entrega": "9101404d1eca1897bfa7da6e73a827566248a2a17544e3470d32e1e3fe6bb72e"
+    },
+    {
+      "caminho_original": "dados/experimentos/sockshop_10.json",
+      "caminho_entrega": "dados/experimentos/sockshop_10.json",
+      "sha256_original": "b1741d1a02ebae03863e61e5008223cb683e6ebad6ee5216ae92898265f4d6b0",
+      "sha256_entrega": "b1741d1a02ebae03863e61e5008223cb683e6ebad6ee5216ae92898265f4d6b0"
+    }
+  ]
+}

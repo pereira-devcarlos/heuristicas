@@ -1,0 +1,216 @@
+{
+  "instancia": "dois_servicos_dois_nos",
+  "metodo": "moma_nsga2_adaptado",
+  "modelo": "moma-operacional-v1",
+  "parametros": {
+    "populacao": 20,
+    "descendentes": 20,
+    "geracoes": 20,
+    "prob_cruzamento": 0.5,
+    "prob_mutacao": 0.3,
+    "eta": 10,
+    "semente": 0
+  },
+  "avaliacoes": 420,
+  "tempo_segundos": 0.1893165679939557,
+  "individuos_finais": 20,
+  "individuos_viaveis_finais": 20,
+  "menor_violacao_final": 0.0,
+  "pontos_nao_dominados": [
+    [
+      0.5,
+      30.900000000000002
+    ],
+    [
+      0.75,
+      0.0
+    ]
+  ],
+  "fronteira": [
+    {
+      "alocacao": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.5,
+        30.900000000000002
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.0
+    },
+    {
+      "alocacao": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "objetivos": [
+        0.75,
+        0.0
+      ],
+      "violacao": 0.0,
+      "sigma_cluster": 0.2651650429449553
+    }
+  ],
+  "historico": [
+    {
+      "geracao": 0,
+      "avaliacoes": 20,
+      "individuos_viaveis": 12,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 1,
+      "avaliacoes": 40,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 2,
+      "avaliacoes": 60,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 3,
+      "avaliacoes": 80,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 4,
+      "avaliacoes": 100,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 5,
+      "avaliacoes": 120,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 6,
+      "avaliacoes": 140,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 7,
+      "avaliacoes": 160,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 8,
+      "avaliacoes": 180,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 9,
+      "avaliacoes": 200,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 10,
+      "avaliacoes": 220,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 11,
+      "avaliacoes": 240,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 12,
+      "avaliacoes": 260,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 13,
+      "avaliacoes": 280,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 14,
+      "avaliacoes": 300,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 15,
+      "avaliacoes": 320,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 16,
+      "avaliacoes": 340,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 17,
+      "avaliacoes": 360,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 18,
+      "avaliacoes": 380,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 19,
+      "avaliacoes": 400,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    },
+    {
+      "geracao": 20,
+      "avaliacoes": 420,
+      "individuos_viaveis": 20,
+      "menor_violacao": 0.0,
+      "pontos_nao_dominados": 2
+    }
+  ]
+}

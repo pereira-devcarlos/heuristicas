@@ -1,0 +1,404 @@
+{
+  "modelo": "moma-operacional-v1",
+  "nome": "sockshop_1_usuarios_hibrida",
+  "origem": {
+    "tipo": "hibrida",
+    "aplicacao": "Sock Shop",
+    "usuarios": 1,
+    "recursos": {
+      "arquivo": "../recursos_artigo.json",
+      "doi": "10.1109/ACCESS.2024.3351944",
+      "tabela": 4,
+      "pagina": 7422
+    },
+    "infraestrutura": "sintetica; regra em gerar_instancias.py, dimensionada pela carga de dez usuarios",
+    "rede": "sintetica; nao utiliza a coluna Interaction do artigo",
+    "trafego": "grafo dirigido sintetico com volumes base uniformes [1,10] multiplicados pelo numero de usuarios",
+    "replicas": "limites sinteticos: uma a duas por servico; custo fixo por replica",
+    "semente_geracao": 102,
+    "unidade_cpu": "cores",
+    "unidade_memoria": "Mbytes",
+    "unidade_volume": "unidades arbitrarias de dados por segundo"
+  },
+  "nos": [
+    {
+      "id": "n0",
+      "cluster": "c0",
+      "cpu": 2.184,
+      "memoria": 3720.57,
+      "falha": 0.012963
+    },
+    {
+      "id": "n1",
+      "cluster": "c0",
+      "cpu": 0.52,
+      "memoria": 885.85,
+      "falha": 0.022319
+    },
+    {
+      "id": "n2",
+      "cluster": "c1",
+      "cpu": 1.248,
+      "memoria": 2126.04,
+      "falha": 0.013394
+    },
+    {
+      "id": "n3",
+      "cluster": "c1",
+      "cpu": 0.416,
+      "memoria": 708.68,
+      "falha": 0.02425
+    },
+    {
+      "id": "n4",
+      "cluster": "c2",
+      "cpu": 1.456,
+      "memoria": 2480.38,
+      "falha": 0.022157
+    },
+    {
+      "id": "n5",
+      "cluster": "c2",
+      "cpu": 0.728,
+      "memoria": 1240.19,
+      "falha": 0.017687
+    }
+  ],
+  "distancias": [
+    [
+      0.0,
+      1.308749,
+      3.349379,
+      2.564833,
+      3.295177,
+      3.429487
+    ],
+    [
+      1.308749,
+      0.0,
+      3.279414,
+      3.819193,
+      3.602967,
+      3.06568
+    ],
+    [
+      3.349379,
+      3.279414,
+      0.0,
+      1.11342,
+      2.692074,
+      3.715303
+    ],
+    [
+      2.564833,
+      3.819193,
+      1.11342,
+      0.0,
+      3.53468,
+      3.413976
+    ],
+    [
+      3.295177,
+      3.602967,
+      2.692074,
+      3.53468,
+      0.0,
+      1.220866
+    ],
+    [
+      3.429487,
+      3.06568,
+      3.715303,
+      3.413976,
+      1.220866,
+      0.0
+    ]
+  ],
+  "servicos": [
+    {
+      "id": "orders-db",
+      "cpu": 0.01,
+      "memoria": 80.11,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "user-db",
+      "cpu": 0.02,
+      "memoria": 169.93,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "rabbitmq",
+      "cpu": 0.1,
+      "memoria": 180.6,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "session",
+      "cpu": 0.01,
+      "memoria": 96.2,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "carts-db",
+      "cpu": 0.01,
+      "memoria": 186.91,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "catalogue-db",
+      "cpu": 0.01,
+      "memoria": 445.84,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "orders",
+      "cpu": 0.04,
+      "memoria": 37.38,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "user",
+      "cpu": 0.04,
+      "memoria": 499.16,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "queue-master",
+      "cpu": 0.1,
+      "memoria": 39.51,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "carts",
+      "cpu": 0.1,
+      "memoria": 75.04,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "catalogue",
+      "cpu": 0.02,
+      "memoria": 21.53,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "front-end",
+      "cpu": 0.17,
+      "memoria": 38.03,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "shipping",
+      "cpu": 0.01,
+      "memoria": 1.1,
+      "replicas_min": 1,
+      "replicas_max": 2
+    },
+    {
+      "id": "payment",
+      "cpu": 0.01,
+      "memoria": 0.93,
+      "replicas_min": 1,
+      "replicas_max": 2
+    }
+  ],
+  "interacoes": [
+    {
+      "origem": "orders-db",
+      "destino": "user-db",
+      "volume": 2.998222
+    },
+    {
+      "origem": "orders-db",
+      "destino": "rabbitmq",
+      "volume": 2.308168
+    },
+    {
+      "origem": "orders-db",
+      "destino": "user",
+      "volume": 3.996833
+    },
+    {
+      "origem": "user-db",
+      "destino": "orders-db",
+      "volume": 2.866255
+    },
+    {
+      "origem": "user-db",
+      "destino": "rabbitmq",
+      "volume": 6.682581
+    },
+    {
+      "origem": "rabbitmq",
+      "destino": "session",
+      "volume": 7.687132
+    },
+    {
+      "origem": "session",
+      "destino": "orders-db",
+      "volume": 8.722549
+    },
+    {
+      "origem": "session",
+      "destino": "carts-db",
+      "volume": 7.160364
+    },
+    {
+      "origem": "carts-db",
+      "destino": "orders-db",
+      "volume": 4.502391
+    },
+    {
+      "origem": "carts-db",
+      "destino": "session",
+      "volume": 4.759293
+    },
+    {
+      "origem": "carts-db",
+      "destino": "catalogue-db",
+      "volume": 7.554708
+    },
+    {
+      "origem": "catalogue-db",
+      "destino": "session",
+      "volume": 3.04164
+    },
+    {
+      "origem": "catalogue-db",
+      "destino": "carts-db",
+      "volume": 2.530402
+    },
+    {
+      "origem": "catalogue-db",
+      "destino": "orders",
+      "volume": 4.506887
+    },
+    {
+      "origem": "catalogue-db",
+      "destino": "front-end",
+      "volume": 3.487024
+    },
+    {
+      "origem": "orders",
+      "destino": "user",
+      "volume": 3.466339
+    },
+    {
+      "origem": "orders",
+      "destino": "front-end",
+      "volume": 2.69644
+    },
+    {
+      "origem": "user",
+      "destino": "orders",
+      "volume": 9.230548
+    },
+    {
+      "origem": "user",
+      "destino": "queue-master",
+      "volume": 3.238218
+    },
+    {
+      "origem": "user",
+      "destino": "catalogue",
+      "volume": 6.244232
+    },
+    {
+      "origem": "queue-master",
+      "destino": "rabbitmq",
+      "volume": 7.822427
+    },
+    {
+      "origem": "queue-master",
+      "destino": "catalogue-db",
+      "volume": 5.559945
+    },
+    {
+      "origem": "queue-master",
+      "destino": "orders",
+      "volume": 6.384433
+    },
+    {
+      "origem": "queue-master",
+      "destino": "user",
+      "volume": 3.456248
+    },
+    {
+      "origem": "queue-master",
+      "destino": "carts",
+      "volume": 8.901718
+    },
+    {
+      "origem": "queue-master",
+      "destino": "payment",
+      "volume": 7.246223
+    },
+    {
+      "origem": "carts",
+      "destino": "catalogue-db",
+      "volume": 2.591756
+    },
+    {
+      "origem": "carts",
+      "destino": "catalogue",
+      "volume": 4.047596
+    },
+    {
+      "origem": "carts",
+      "destino": "front-end",
+      "volume": 4.225177
+    },
+    {
+      "origem": "catalogue",
+      "destino": "user",
+      "volume": 1.490412
+    },
+    {
+      "origem": "catalogue",
+      "destino": "front-end",
+      "volume": 5.070048
+    },
+    {
+      "origem": "front-end",
+      "destino": "session",
+      "volume": 5.247699
+    },
+    {
+      "origem": "front-end",
+      "destino": "shipping",
+      "volume": 3.902249
+    },
+    {
+      "origem": "shipping",
+      "destino": "user",
+      "volume": 8.74014
+    },
+    {
+      "origem": "shipping",
+      "destino": "payment",
+      "volume": 2.860805
+    },
+    {
+      "origem": "payment",
+      "destino": "orders-db",
+      "volume": 2.566191
+    },
+    {
+      "origem": "payment",
+      "destino": "shipping",
+      "volume": 2.534761
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "origem": {
+    "tipo": "transcricao_manual_cpu_memoria",
+    "doi": "10.1109/ACCESS.2024.3351944",
+    "tabelas": {"1": {"tabela": 4, "pagina": 7422}, "10": {"tabela": 5, "pagina": 7423}},
+    "unidades": ["cores", "Mbytes"],
+    "observacao": "A ordem dos pares CPU/memoria segue a lista ids. A coluna Interaction nao foi transcrita nem utilizada. Valores nao monotonicos foram preservados."
+  },
+  "aplicacoes": {
+    "edgex": {
+      "nome": "EdgeX Foundry",
+      "ids": ["edgex-device-rest", "edgex-core-consul", "edgex-core-command", "edgex-support-scheduler", "edgex-redis", "edgex-coredata", "edgex-coremetadata", "edgex-support-notification", "edgex-sys-mgmt"],
+      "1": [[0.01,31.98],[0.01,1.65],[0.04,18.41],[0.01,45.31],[0.12,99.41],[0.03,124.55],[0.08,28.52],[0.10,29.61],[0.01,15.31]],
+      "10": [[0.02,63.68],[0.05,88.49],[0.08,39.42],[0.53,424.63],[0.43,103.21],[0.35,425.71],[0.32,75.15],[0.21,58.12],[0.01,42.51]]
+    },
+    "sockshop": {
+      "nome": "Sock Shop",
+      "ids": ["orders-db", "user-db", "rabbitmq", "session", "carts-db", "catalogue-db", "orders", "user", "queue-master", "carts", "catalogue", "front-end", "shipping", "payment"],
+      "1": [[0.01,80.11],[0.02,169.93],[0.10,180.60],[0.01,96.20],[0.01,186.91],[0.01,445.84],[0.04,37.38],[0.04,499.16],[0.10,39.51],[0.10,75.04],[0.02,21.53],[0.17,38.03],[0.01,1.10],[0.01,0.93]],
+      "10": [[0.29,381.84],[0.25,193.10],[0.18,173.45],[0.10,1268.35],[0.10,1148.19],[0.04,156.86],[0.02,25.23],[0.02,28.37],[0.24,144.87],[0.23,7.97],[0.19,6.15],[0.35,0.20],[0.04,1.10],[0.03,7.72]]
+    },
+    "kubeflow": {
+      "nome": "Kubeflow",
+      "ids": ["application-controller", "metadata", "metadata-writer", "metadata-envoy-deployment", "cache-server", "ml-pipeline-viewer", "ml-pipeline-scheduledworkflow", "mysql", "minio", "ml-pipeline-ui", "ml-pipeline-visualizationserver", "workflow-controller", "tran-pipeline", "ml-pipeline-persistenceagent"],
+      "1": [[0.01,162.37],[0.01,175.80],[0.01,459.85],[0.02,208.86],[0.01,229.99],[0.01,184.03],[0.01,192.84],[0.01,1486.93],[0.01,189.36],[0.01,511.34],[0.01,763.44],[0.01,301.26],[2.39,1500.28],[0.01,286.53]],
+      "10": [[0.03,232.64],[0.03,199.31],[0.01,653.21],[0.05,314.60],[0.01,311.24],[0.01,224.42],[0.01,316.52],[0.02,1524.01],[0.02,352.24],[0.01,592.58],[0.01,843.52],[0.03,421.14],[4.39,1678.91],[0.02,351.23]]
+    }
+  }
+}
