@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+resultados/
+*.zip
+
+# Inclui os exemplos desta aula, mesmo com regras gerais para instâncias.
+!instancias/
+!instancias/*.txt
